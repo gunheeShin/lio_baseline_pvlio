@@ -110,3 +110,6 @@ target_include_directories(pandar_to_velodyne PRIVATE ${PYTHON_INCLUDE_DIRS})
 add_executable(rs_to_velodyne src/converter/rs_to_velodyne.cpp)
 target_link_libraries(rs_to_velodyne ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${PYTHON_LIBRARIES})
 target_include_directories(rs_to_velodyne PRIVATE ${PYTHON_INCLUDE_DIRS})
+
+target_link_libraries(pv_lio_node /workspace/lio_baselines_ws/src/lio_baselines/include/data_recorder/build/libdata_recorder.so)
+target_include_directories(pv_lio_node PRIVATE /workspace/lio_baselines_ws/src/lio_baselines/include/data_recorder)
