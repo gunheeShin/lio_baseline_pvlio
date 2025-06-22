@@ -59,3 +59,4 @@ data_recorder:
     lidar_indices: [0]
     algorithm: "pvlio"
     param_set_name: "default"
+    save_frame_mode: 0 # 0: no save, 1: save entire frame at once, 2: save each frame
